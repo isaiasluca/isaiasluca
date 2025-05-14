@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andes Destinos no Chile</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      color: #2c3e50;
+    }
+    img {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+    .text {
+      font-size: 1.2rem;
+      color: #34495e;
+    }
+  </style>
+  <script>
+    const whatsapps = [
+      'https://wa.me/56984317227', 
+      'https://wa.me/56920480887',
+      'https://wa.me/56929210403'
+    ];
+    const index = Math.floor(Math.random() * whatsapps.length);
+    const selectedLink = whatsapps[index];
+    window.onload = function () {
+      setTimeout(() => {
+        window.location.href = selectedLink;
+      }, 3000);
+    };
+  </script>
+</head>
+<body>
+  <img src="Design%20sem%20nome-2.png" alt="Logo Andes Destinos">
+  <div class="text">Redirecionando você para o atendimento via WhatsApp...</div>
+</body>
+</html>
